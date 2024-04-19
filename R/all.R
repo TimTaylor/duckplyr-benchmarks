@@ -1,9 +1,9 @@
 if (interactive()) {
     root    <- here::here()
-    files <- c(sprintf("dp%d-12-months.rds", 1:4), sprintf("dt%d-12-months.rds", 1:4))
+    files <- c(sprintf("dp%d-12-months.rds", 1:4), sprintf("dt%d-3-months.rds", 1:4))
     INFILES <- file.path(root, "output", files)
-    OUTFILE_CSV <- file.path(root, "output", "all-12-months.csv")
-    OUTFILE_RDS <- file.path(root, "output", "all-12-months.rds")
+    OUTFILE_CSV <- file.path(root, "output", "all-3-months.csv")
+    OUTFILE_RDS <- file.path(root, "output", "all-3-months.rds")
 } else {
     args    <- commandArgs(trailingOnly = TRUE)
     n_args <- length(args)

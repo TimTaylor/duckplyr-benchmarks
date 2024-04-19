@@ -8,7 +8,7 @@ if (interactive()) {
     INFILE_CLASSES <- file.path(root, "data", "classes.rds")
     INFILE_HELPERS <- file.path(root, "R", "helpers.R")
     N_REPS         <- 5L
-    OUTFILE        <- file.path(root, "output", "dp1-12-months.rds")
+    OUTFILE        <- file.path(root, "output", "dp1-3-months.rds")
 } else {
     args           <- commandArgs(trailingOnly = TRUE)
     INFILE_TAXI    <- args[1L]
