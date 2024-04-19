@@ -27,6 +27,9 @@ results <-
     pivot_wider(names_from = "package", values_from = "output") |>
     summarise(equal_output = isTRUE(all.equal(duckplyr, data.table)), .by = benchmark)
 
+if (!all(results$equal_output))
+    warning("Not all benchmarks generated equal output.")
+
 timings <- dat |>
     select(-output) |>
     pivot_wider(names_from = "package", values_from = "median") |>
@@ -45,3 +48,5 @@ timings <- dat |>
 
 write.csv(timings, file = OUTFILE_CSV, row.names = FALSE)
 saveRDS(out, file = OUTFILE_RDS)
+
+
