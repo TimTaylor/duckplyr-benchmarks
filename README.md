@@ -1,10 +1,11 @@
-Repository contains code to benchmark duckplyr and data.table.
+# Overview
 
-Based on the examples at https://github.com/Tmonster/duckplyr_demo
+Repository contains code to benchmark duckplyr and data.table. It is based
+on the the examples from https://github.com/Tmonster/duckplyr_demo.
 
-# Running
+## Running
 
-- Clone repository.
+- Clone this repository.
 - Edit the `MONTHS` and `REPS` variables at the top of the Makefile.
     - `MONTHS` represents how many months (1-12) of data you want to include.
     - `REPS` is the number of repetitions of each benchmark to perform. If
@@ -19,7 +20,7 @@ cd duckplyr-benchmarks
 make
 ```
 
-# Details
+## Details
 
 - `R/download.R` downloads the zipped taxi data.
 - `R/csv.R`:
@@ -32,7 +33,7 @@ make
   and another rds file which also includes the versions of duckplyr and data.table
   used in the benchmarks.
   
-# Interactive use (debugging / exploration)
+## Interactive use (debugging / exploration)
 
 The files can be run interactively (following the order listed above) but care
 must be taken to ensure the input constants (at the top of each file are correct).
