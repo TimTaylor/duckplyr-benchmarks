@@ -3,7 +3,7 @@
 
 if (interactive()) {
     root           <- here::here()
-    INFILE_TAXI    <- file.path(root, "data", "taxi-data-2019-partitioned-12-months.csv")
+    INFILE_TAXI    <- file.path(root, "data", "taxi-data-2019-partitioned-3-months.csv")
     INFILE_ZONE    <- file.path(root, "data", "zone_lookups.csv")
     INFILE_CLASSES <- file.path(root, "data", "classes.rds")
     INFILE_HELPERS <- file.path(root, "R", "helpers.R")
