@@ -52,4 +52,4 @@ res <- benchmark(gh1, n = reps, package = "data.table")
 
 saveRDS(res, OUTFILE)
 
-cat(" - duckplyr benchmark 1: Finished! \n\n")
+cat(" - data.table benchmark 1: Finished! \n\n")
